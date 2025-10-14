@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { Phone, Mail, Zap, CheckCircle, Send, AlertCircle, Award, Shield, Star, ArrowRight } from 'lucide-react';
+import { Phone, Mail, Zap, CheckCircle, Send, AlertCircle, Award, Shield, Star, ArrowRight, MessageCircle } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -248,29 +248,42 @@ Enviado desde wasabienergia.es
 
                 <div className="bg-gradient-to-r from-[#A8FF00]/20 to-[#96E600]/20 p-8 rounded-2xl border-2 border-[#A8FF00] mb-8">
                   <h3 className="text-2xl font-black text-gray-900 mb-4">
-                    📱 ¿Prefieres contacto directo por WhatsApp?
+                    ¿Prefieres contacto directo?
                   </h3>
-                  <a 
-                    href="https://wa.me/+34621508300?text=Hola,%20me%20interesa%20información%20sobre%20Energía%20Verde%20Wasabi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-3 bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
-                  >
-                    <Phone className="h-6 w-6" />
-                    <span>Escribir por WhatsApp: +34 621 50 83 00</span>
-                  </a>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                      href="https://wa.me/+34621508300?text=Hola,%20me%20interesa%20información%20sobre%20Energía%20Verde%20Wasabi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center space-x-3 bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
+                      <MessageCircle className="h-6 w-6" />
+                      <span>WhatsApp: +34 621 50 83 00</span>
+                    </a>
+                    <a
+                      href="tel:+34900264856"
+                      className="inline-flex items-center justify-center space-x-3 bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
+                      <Phone className="h-6 w-6" />
+                      <span>Llamar: +34 900 264 856</span>
+                    </a>
+                  </div>
                 </div>
 
                 <div className="text-sm text-gray-600 bg-gray-100 p-6 rounded-xl border border-gray-300">
                   <p className="font-semibold mb-3 text-gray-800">📞 Otros métodos de contacto:</p>
-                  <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-8">
-                    <a href="mailto:info@wasabitrader.com" className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors">
+                  <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-6">
+                    <a href="mailto:info@wasabitrader.com" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                       <Mail className="h-5 w-5" />
                       <span>info@wasabitrader.com</span>
                     </a>
-                    <a href="tel:+34621508300" className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors">
+                    <a href="https://wa.me/+34621508300" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors">
+                      <MessageCircle className="h-5 w-5" />
+                      <span>WhatsApp: +34 621 50 83 00</span>
+                    </a>
+                    <a href="tel:+34900264856" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                       <Phone className="h-5 w-5" />
-                      <span>+34 621 50 83 00</span>
+                      <span>Llamar: +34 900 264 856</span>
                     </a>
                   </div>
                 </div>

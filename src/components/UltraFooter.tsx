@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Mail, Phone, MapPin, Sparkles, Shield, Award } from 'lucide-react';
+import { Zap, Mail, Phone, MapPin, Sparkles, Shield, Award, MessageCircle, Clock } from 'lucide-react';
 
 const UltraFooter = () => {
   return (
@@ -135,7 +135,7 @@ const UltraFooter = () => {
                 </a>
               </motion.div>
               
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-4 group cursor-pointer"
                 whileHover={{ scale: 1.05, x: 10 }}
               >
@@ -145,15 +145,41 @@ const UltraFooter = () => {
                 >
                   <Phone className="h-5 w-5 text-[#A8FF00]" />
                 </motion.div>
-                <a 
-                  href="tel:+34900000000" 
-                  className="text-gray-300 hover:text-[#A8FF00] transition-colors"
+                <div>
+                  <p className="text-gray-500 text-xs mb-1">Teléfono:</p>
+                  <a
+                    href="tel:+34900264856"
+                    className="text-gray-300 hover:text-[#A8FF00] transition-colors"
+                  >
+                    +34 900 264 856
+                  </a>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="flex items-center space-x-4 group cursor-pointer"
+                whileHover={{ scale: 1.05, x: 10 }}
+              >
+                <motion.div
+                  className="p-2 bg-green-500/20 rounded-xl group-hover:bg-green-500/30 transition-colors"
+                  whileHover={{ rotate: 10 }}
                 >
-                  +34 621 50 83 00
-                </a>
+                  <MessageCircle className="h-5 w-5 text-green-400" />
+                </motion.div>
+                <div>
+                  <p className="text-gray-500 text-xs mb-1">WhatsApp:</p>
+                  <a
+                    href="https://wa.me/+34621508300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-green-400 transition-colors"
+                  >
+                    +34 621 50 83 00
+                  </a>
+                </div>
               </motion.div>
               
-              <motion.div 
+              <motion.div
                 className="flex items-start space-x-4 group"
                 whileHover={{ scale: 1.05, x: 10 }}
               >
@@ -164,9 +190,27 @@ const UltraFooter = () => {
                   <MapPin className="h-5 w-5 text-[#A8FF00]" />
                 </motion.div>
                 <span className="text-gray-300">
-                  Calle de la Energía Verde, 123<br />
-                  28001 Madrid, España
+                  CALLE ANDARELLA, 2<br />
+                  46950, VALENCIA<br />
+                  ESPAÑA
                 </span>
+              </motion.div>
+
+              <motion.div
+                className="flex items-start space-x-4 group"
+                whileHover={{ scale: 1.05, x: 10 }}
+              >
+                <motion.div
+                  className="p-2 bg-[#A8FF00]/20 rounded-xl group-hover:bg-[#A8FF00]/30 transition-colors mt-1"
+                  whileHover={{ rotate: 10 }}
+                >
+                  <Clock className="h-5 w-5 text-[#A8FF00]" />
+                </motion.div>
+                <div className="text-gray-300">
+                  <p className="text-gray-500 text-xs mb-1">Horario de oficina:</p>
+                  <p>Lun - Jue: 9:30 - 15:00 y 15:30 - 18:00</p>
+                  <p>Viernes: 9:30 - 14:50</p>
+                </div>
               </motion.div>
             </div>
           </motion.div>

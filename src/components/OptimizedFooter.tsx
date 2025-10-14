@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Mail, Phone, MapPin, Shield, Award } from 'lucide-react';
+import { Zap, Mail, Phone, MapPin, Shield, Award, MessageCircle, Clock } from 'lucide-react';
 
 const OptimizedFooter = () => {
   return (
@@ -77,7 +77,7 @@ const OptimizedFooter = () => {
                 </div>
               </div>
               
-              {/* Teléfono ACTUALIZADO */}
+              {/* Teléfono directo */}
               <div className="group cursor-pointer hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center space-x-4">
                   <div className="p-2 bg-[#A8FF00]/20 rounded-xl group-hover:bg-[#A8FF00]/30 transition-colors">
@@ -85,16 +85,36 @@ const OptimizedFooter = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-sm">Teléfono:</p>
-                    <a 
-                      href="tel:+34621508300" 
+                    <a
+                      href="tel:+34900264856"
                       className="text-gray-200 hover:text-[#A8FF00] transition-colors text-base font-medium"
+                    >
+                      +34 900 264 856
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="group cursor-pointer hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center space-x-4">
+                  <div className="p-2 bg-green-500/20 rounded-xl group-hover:bg-green-500/30 transition-colors">
+                    <MessageCircle className="h-5 w-5 text-green-400" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">WhatsApp:</p>
+                    <a
+                      href="https://wa.me/+34621508300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-200 hover:text-green-400 transition-colors text-base font-medium"
                     >
                       +34 621 50 83 00
                     </a>
                   </div>
                 </div>
               </div>
-              
+
               {/* Dirección ACTUALIZADA */}
               <div className="group hover:scale-105 transition-transform duration-300">
                 <div className="flex items-start space-x-4">
@@ -108,6 +128,22 @@ const OptimizedFooter = () => {
                       46950, VALENCIA<br />
                       ESPAÑA
                     </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Horarios de oficina */}
+              <div className="group hover:scale-105 transition-transform duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className="p-2 bg-[#A8FF00]/20 rounded-xl group-hover:bg-[#A8FF00]/30 transition-colors mt-1 flex-shrink-0">
+                    <Clock className="h-5 w-5 text-[#A8FF00]" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm mb-1">Horario de oficina:</p>
+                    <div className="text-gray-200 leading-relaxed text-base">
+                      <p>Lun - Jue: 9:30 - 15:00 y 15:30 - 18:00</p>
+                      <p>Viernes: 9:30 - 14:50</p>
+                    </div>
                   </div>
                 </div>
               </div>
