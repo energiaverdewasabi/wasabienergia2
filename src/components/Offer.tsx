@@ -228,12 +228,12 @@ const Offer = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-black text-[#A8FF00] mb-2">60€</div>
+                <div className="text-4xl font-black text-[#A8FF00] mb-2">30% descuento</div>
                 <div className="text-gray-300">Premio luz</div>
               </div>
               <div className="text-2xl text-white font-bold flex items-center justify-center">+</div>
               <div>
-                <div className="text-4xl font-black text-[#A8FF00] mb-2">60€</div>
+                <div className="text-4xl font-black text-[#A8FF00] mb-2">30% descuento</div>
                 <div className="text-gray-300">Premio gas</div>
               </div>
             </div>
